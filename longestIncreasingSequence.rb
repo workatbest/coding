@@ -26,4 +26,6 @@ def longest_increasing_sequence(array, iter, n, prev)
     return [excl,incl].max
 end
 
-puts longest_increasing_sequence([1, 2, 1, 5], 0, 4, 0)
+puts longest_increasing_sequence([1, 2, 1, 5], 0, 4, -1)
+A = [0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15]
+puts longest_increasing_sequence(A, 0, A.size, -1)
